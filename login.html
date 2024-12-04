@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcelaintraum - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Porcelaintraum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Über uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-light text-center py-5">
+        <h1 class="display-4">Login</h1>
+        <p class="lead">Melden Sie sich an, um auf Ihren Account zuzugreifen.</p>
+    </header>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">Anmeldung</h2>
+                                <form action="secret.html" method="post">
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label">Benutzername</label>
+                                        <input type="text" class="form-control" id="username" name="username" placeholder="Benutzername" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Passwort</label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Passwort" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Anmelden</button>
+                                </form>
+                                <p class="text-center mt-3">
+                                    <a href="#">Passwort vergessen?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Versteckter Link zur Secret-Seite -->
+    <div class="text-center py-3">
+        <a href="secret.html" style="color: transparent; text-decoration: none;">Geheim...</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2024 Porcelaintraum. Alle Rechte vorbehalten.</p>
+        <p>Design und Entwicklung von Ihrem Team.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
